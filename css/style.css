@@ -39,13 +39,8 @@ body {
   background-color: #fff;
 }
 
-main {
-  padding-top: 140px;
-  padding-bottom: 75px;
-}
-
 img {
-  max-width: 100%;
+  max-idth: 100%;
   height: auto;
   object-fit: contain;
   border-radius: 8px;
@@ -152,6 +147,11 @@ p {
 
 
 /*main*/
+
+.main {
+  padding-top: 140px;
+  padding-bottom: 75px;
+}
 
 .h{
   font-family: "SpectralSC", serif;
@@ -288,7 +288,7 @@ p {
 /*about-me*/
 
 .about-me {
-  align-items: center;
+  align-items: flex-end;
   display: flex;
 }
 
@@ -297,7 +297,6 @@ p {
 }
 
 .about-me-right {
-  padding-top: 20px;
   width: 580px;
 }
 
@@ -402,10 +401,13 @@ p {
   outline: none;
 }
 
+.write-me-textarea-label {
+  margin-bottom: 20px;
+}
+
 .write-me-textarea {
   display: inherit;
   width: 840px;
-  margin-bottom: 20px;
   color: #202117;
   border: 1px solid #202117;
   font: inherit;
@@ -484,8 +486,9 @@ p {
 .like-button {
   background: url(../img/icons/motivation-footer/like.svg) no-repeat;
   background-size: cover;
-  padding: 25px;
-  padding-bottom: 30px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
   margin-right: 10px;
   cursor: pointer;
   border: none;
@@ -510,7 +513,8 @@ p {
 }
 
 .menu-item-motivation {
-  padding: 25px;
+  width: 50px;
+  height: 50px;
   display: block;
   background: url(../img/icons/social-networks/twitter.svg);
 }
